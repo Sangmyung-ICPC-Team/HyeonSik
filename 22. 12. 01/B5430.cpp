@@ -16,7 +16,7 @@ int main() {
 		
 		cin >> size;
 
-		char num[5] = " ";
+		char num[4] = " ";
 		vector<int> s;
 		cin >> str_arr;
 
@@ -26,7 +26,7 @@ int main() {
 			
 			if (ch == ',' && idx != 0) {
 				s.push_back(atoi(num));
-				for (int j = 0; j < idx; j++) num[idx] = 0;
+				for (int j = 0; j < idx; j++) num[j] = ' ';
 				idx = 0;
 			}
 			
